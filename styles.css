@@ -104,7 +104,7 @@ body{
     move;
         cursor: url('click.png')10 12;
         padding: 0px 20px;
-        background-image: url(src/svg/settings-svgrepo-com.svg);
+        background-image: url(src/img/svg/settings-svgrepo-com.svg);
         background-size: 60%;
         background-repeat: no-repeat;
         background-position: center;
@@ -151,7 +151,7 @@ body{
     position: relative;
     width: 40px;
     height: 40px;
-    background-image: url(src/png/crescent-moon\ \(1\).png);
+    background-image: url(src/img/crescent-moon.png);
     background-size:50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -170,7 +170,7 @@ body{
 #switchforvisualmode:checked+#labelforvisualmode { 
     transform: rotate(360deg);
     transition-duration: .5s;
-    background-image: url(src/png/sun.png);
+    background-image: url(src/img/sun.png);
     background-size:60%;
     background-repeat: no-repeat;
     background-position: center;
@@ -200,7 +200,7 @@ body{
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-image: url(src/svg/Mute_Icon.svg);
+    background-image: url(src/img/svg/Mute_Icon.svg);
     background-size:60%;
     background-repeat: no-repeat;
     background-position: center;
@@ -222,7 +222,7 @@ body{
 
 #switchforsound:checked+#labelforsound { 
     transition-duration: .5s;
-    background-image: url(src/svg/Speaker_Icon.svg);
+    background-image: url(src/img/svg/Speaker_Icon.svg);
     background-size:50%;
     background-repeat: no-repeat;
     background-position: center ;
@@ -245,7 +245,7 @@ header{
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-    background-image: url(src/svg/Pulse-0.4s-200px.svg);
+    background-image: url(src/img/svg/Pulse-0.4s-200px.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 10%;

@@ -1,0 +1,30 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #007bff, #6610f2);
+  }
+  
+  /* About Section */
+  #about img {
+    max-width: 250px;
+  }
+  
+  /* Skills Section */
+  #skills p {
+    font-size: large;
+  }
+  
+  /* Projects Section */
+  .card img {
+    height: auto;
+  }
+  
+  /* Contact Section */
+  form input, form textarea {
+    border-radius: 5px;
+  }
+  

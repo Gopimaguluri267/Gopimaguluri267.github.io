@@ -1,251 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gopi Maguluri - Data Scientist</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="theme-color" content="#111">
+    <meta name="description"
+        content="Gopi Maguluri | Personal Portfolio. Learn more about my projects and experiences in Data Science">
+    <meta name="keywords"
+        content="Gopi Maguluri Portfolio">
+    <meta name="author" content="Gopi Maguluri">
+
+    <title>Gopi Maguluri | Data Scientist & ML Engineer</title>
+    <link rel="icon" type="image/x-icon" href="src/png/profile.png">
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps">
+    <!-- google icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Gopi Maguluri</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Gopi Maguluri Resume.pdf" target="_blank">Resume</a>
-                    </li>
+<body class="body">
+    <audio loop="" id="audioPlayer" autoplay="" style="display:none">
+        <source src="src/audio/music.mp3" type="audio/mp3">
+    </audio>
+    <div id="preloader"></div>
+    <noscript>Allow Javascript</noscript>
+
+    <header>
+
+
+        <div class="navbar" id="navbar">
+            <div class="hey">Hey!</div>
+            <div class="logo" tabindex="0" aria-label="gopi logo">
+
+                <div class="logo-top">
+                    <img src="src/img/profile.png" alt="">
+                    <div class="face">
+                        <div class="eye">
+                            <div class="pupil"></div>
+                        </div>
+                        <div class="eye">
+                            <div class="pupil"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logo-bottom"><img src="src/img/profile.png" alt=""></div>
+
+            </div>
+            <div class="navbar-container">
+            <div class="navbar-tabs" id="navbar-tabs">
+                <ul class="navbar-tabs-ul">
+                    <a href="#home" tabindex="0" aria-label="Home menu button">
+                        <li class="home activeThistab" class="navbar-tabs-li " data-aos="fade-down"
+                            data-aos-delay="100">&#60;/Home&#62;</li>
+                    </a>
+                    <a href="#about" aria-label="about menu button">
+                        <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+                            &#60;/About&#62;</li>
+                    </a>
+                    <a href="#skills" aria-label="skills menu button">
+                        <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+                            &#60;/Skills&#62;</li>
+                    </a>
+                    <a href="#projects" aria-label="projects menu button">
+                        <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+                            &#60;/Projects&#62;</li>
+                    </a>
+                    <a href="#projects" aria-label="projects menu button">
+                        <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+                            &#60;/Achivements&#62;</li>
+                    </a>
+
                 </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Header -->
-    <header class="header bg-primary text-white text-center">
-        <div class="container">
-            <img src="assets/img/profile.jpg" alt="Profile Picture" class="rounded-circle img-fluid mb-3" style="width: 150px;">
-            <h1>Gopi Maguluri</h1>
-            <p>Data Scientist | Machine Learning Engineer</p>
-            <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
-            </div>
+
+            </div><!-- navbar tabs ends -->
+        </div>
         </div>
     </header>
+    <!-- header ends here -->
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Data Scientist with 3+ years of experience developing and deploying end-to-end Machine Learning solutions for businesses.</p>
-            <p>Location: San Francisco (Open to relocate)</p>
-        </div>
-    </section>
+    <main>
 
-    <!-- Experience Section -->
-    <section id="experience" class="bg-light py-5">
-        <div class="container">
-            <h2>Experience</h2>
-            <!-- ArangoDB -->
-            <div class="experience-item">
-                <h3>Machine Learning Engineer, Intern</h3>
-                <h4>ArangoDB, San Francisco, California</h4>
-                <p>October 2024 – Present</p>
-                <ul>
-                    <li>Developed a Natural Language to ArangoDB Query Language (AQL) system by fine-tuning LLMs using PEFT enabling seamless interaction with graph databases, improving query efficiency by 78% for customers.</li>
-                    <li>Engineered LLM fine-tuning pipelines with custom reward functions for reinforcement learning, optimizing GPU utilization and training efficiency, resulting in a 25% improvement in AQL generation accuracy.</li>
-                    <li>Developed an automated data generation pipeline for graph databases to fine-tune LLMs, built an LLM-as-a-Judge based validation system reducing manual effort by 85%.</li>
-                </ul>
-            </div>
-            <!-- Tatras Data -->
-             <div class="experience-item">
-                <h3>Data Scientist</h3>
-                <h4>Tatras Data, New Delhi, India</h4>
-                <p>July 2021 – June 2024</p>
-                <ul>
-                    <li>Developed an NLP solution to automate matching job categories based on job titles and industries by training Bi-Encoders, Cross-Encoders and fine-tuning Gemma-2B, achieving a 75% reduction in matching time.</li>
-                    <li>Developed a production-ready, dockerized API to interact with the databases in natural language by automating SQL query generation using LLMs and prompt engineering, delivering 80% accuracy.</li>
-                    <li>Developed and deployed a dockerized end-to-end solution for a text ranking use case using Word2Vec, FastText, GRUs, BERT, and Sentence Transformers, reducing customer's manual effort in ranking by 90%.</li>
-                    <li>Implemented and deployed an Intelligent Document Processing solution with document clustering and token classification pipeline by training LayoutLMv3, improving customer’s document processing efficiency by 5x.</li>
-                </ul>
-            </div>
-             <!-- Smart Energy Water -->
-             <div class="experience-item">
-                <h3>Data Scientist, Intern</h3>
-                <h4>Smart Energy Water, Noida, India</h4>
-                <p>January 2021 – June 2021</p>
-                <ul>
-                    <li>Developed a text classification solution for customer complaints using custom-trained FastText embeddings and an ensemble of Decision Trees, Random Forest and XGBoost algorithms, resulting in 92% accuracy.</li>
-                    <li>Accomplished a research based project that aimed at disaggregating household electricity consumption to the appliance level, involving data analysis, feature engineering and model training using CNNs.</li>
-                </ul>
+        <!-- hamburger -->
+        <div class="hamburger" id="hamburger" data-aos="fade">
+            <div class="hamburgerbase">
+                <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+                    <span class="burger-bar" id="burger-bar1"></span>
+                    <span class="burger-bar" id="burger-bar2"></span>
+                    <span class="burger-bar" id="burger-bar3"></span></button>
             </div>
         </div>
-    </section>
+        <!-- hamburger -->
+        <div class="mobiletogglemenu" id="mobiletogglemenu">
+            <div class="emptyarea" id="emptyarea"></div>
+            <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+                <a href="#home" tabindex="0" aria-label="Home menu button">
+                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab"
+                        onclick="hidemenubyli()">&#60;/Home&#62;</li>
+                </a>
+                
+                <a href="#about" tabindex="0" aria-label="about menu button">
+                    <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+                        &#60;/AboutMe&#62;</li>
+                </a>
+                <a href="#skills" tabindex="0" aria-label="skills menu button">
+                    <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+                        &#60;/Skills&#62;</li>
+                </a>
+                <a href="#projects" tabindex="0" aria-label="projects menu button">
+                    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                        &#60;/Projects&#62;</li>
+                </a>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="row">
-                <!-- Deep Learning based Chess Bot -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/img/chess-bot.jpg" class="card-img-top" alt="Chess Bot">
-                        <div class="card-body">
-                            <h5 class="card-title">Deep Learning based Chess Bot</h5>
-                            <p class="card-text">Secured 1st place and a $10,000 credit in the Chess GPU Hackathon by designing and training a high-performance deep learning based chess model from scratch on a 48-GPU cluster.</p>
-                            <a href="#" class="btn btn-primary" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Fine Tuning Gemma for Law Stack Exchange -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Fine Tuning Gemma for Law Stack Exchange</h5>
-                            <p class="card-text">Preprocessed 20,000+ legal forum records with Nvidia NeMo Curator, and fine-tuned Gemma 2B model using NeMo microservices, improving tagging accuracy by 15% during the ODSC Nvidia Hackathon.</p>
-                            <a href="#" class="btn btn-primary" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Raga Identification in Indian Classical Music -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Raga Identification in Indian Classical Music</h5>
-                            <p class="card-text">Developed and deployed a web application to predict Ragas from audios by extracting Mel spectrograms and pitch contours, and training CNNs, achieving 82% accuracy as Data Science Intern at Sabudh Foundation.</p>
-                            <a href="#" class="btn btn-primary" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <a href="#achivements" tabindex="0" aria-label="achivements menu button">
+                    <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                        &#60;/Achivements&#62;</li>
+                </a>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light py-5">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Natural Language Processing</li>
-                <li>Reinforcement Learning</li>
-                <li>Large Language Models</li>
-                <li>Prompt Engineering</li>
-                <li>Generative AI</li>
-                <li>Statistical Modeling</li>
-                <li>TensorFlow</li>
-                <li>PyTorch</li>
-                <li>Scikit-learn</li>
-                <li>NumPy</li>
-                <li>Pandas</li>
-                <li>SciPy</li>
-                <li>Python</li>
-                <li>Shell</li>
-                <li>Linux</li>
-                <li>SQL</li>
-                 <li>AQL</li>
-                <li>PySpark</li>
-                <li>API development</li>
-                <li>FastAPI</li>
-                <li>Docker</li>
-                <li>Git</li>
+
             </ul>
         </div>
-    </section>
+        <!-- mobile toggle menu ends -->
+        <div class="fakenavbar"></div>
+        <section class="landing-page-container" id="home">
 
-   <!-- Education Section -->
-    <section id="education" class="py-5">
-        <div class="container">
-            <h2>Education</h2>
-            <div>
-                <h3>Master of Science in Data Science</h3>
-                <h4>University of San Francisco, San Francisco, California</h4>
-                <p>July 2024 - June 2025</p>
+
+
+
+            <div class="text-content">
+                <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+                    <p class="jello">N</p>
+                    <p class="jello">a</p>
+                    <p class="jello">m</p>
+                    <p class="jello">a</p>
+                    <p class="jello">s</p>
+                    <p class="jello">t</p>
+                    <p class="jello">e</p>
+                    <p class="jello">(</p>
+                    <p class="jello">)</p>
+                    <p class="jello">;</p>&nbsp;<p class="jello">I</p>
+                    <p class="jello">'</p>
+                    <p class="jello">m</p>
+                </article>
+                <article id="name" data-aos="fade-up" data-aos-delay="200">
+                    <p class="jello">R</p>
+                    <p class="jello">A</p>
+                    <p class="jello">M</p>&nbsp;
+                    <p class="jello">N</p>
+                    <p class="jello">A</p>
+                    <p class="jello">R</p>
+                    <p class="jello">A</p>
+                    <p class="jello">Y</p>
+                    <p class="jello">A</p>
+                    <p class="jello">N</p>&nbsp;
+                    <p class="jello">T</p>
+                    <p class="jello">I</p>
+                    <p class="jello">W</p>
+                    <p class="jello">A</p>
+                    <p class="jello">R</p>
+                    <p class="jello">I</p>
+                    <p class="jello">.</p>
+                </article>
+
+
+                <article id="work" data-aos="fade-up" data-aos-delay="400">
+                   
+                    <div>
+                        <p class="jello">D</p>
+                        <p class="jello">a</p>
+                        <p class="jello">t</p>
+                        <p class="jello">a</p>
+                       
+                    </div>
+                    <div>
+                        <p class="jello">A</p>
+                        <p class="jello">n</p>
+                        <p class="jello">a</p>
+                        <p class="jello">l</p>
+                        <p class="jello">y</p>
+                        <p class="jello">s</p>
+                        <p class="jello">t</p>
+                       
+                       
+                    </div>
+                    
+                </article>
+                <p id="info-para" data-aos="fade-up" data-aos-delay="600">I'm a Machine Learning Engineer and Data Scientist with proven expertise in developing and deploying end-to-end AI solutions for complex business challenges. Specialized in NLP, LLM fine-tuning, and reinforcement learning techniques, with a track record of creating production-ready systems that deliver measurable impact. My experience includes building natural language interfaces for databases, implementing text ranking solutions, and developing intelligent document processing systems that drive operational efficiency and enhance decision-making capabilities across organizations.RetryClaude can make mistakes. Please double-check responses.
+                </p>
+
+
+                <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+
+                    <a href="https://drive.google.com/file/d/1k3oQLpMr-g7yHacMvoxhZWzGrWURl41I/view?usp=sharing" tabindex="-1">
+                        <button class="letsTalkBtn">
+                            <p class="letsTalkBtn-text">Resume</p>
+                            <span class="letsTalkBtn-BG"></span>
+                        </button></a>
+                    <div class="setting-container" id="setting-container">
+                        <input type="checkbox" id="switchforsetting" onclick="settingtoggle()">
+
+                        <label for="switchforsetting" id="labelforsetting" tabindex="0"
+                            aria-label="settings for sound and appearance"></label>
+
+                        <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+                            <input type="checkbox" id="switchforvisualmode" onclick="visualmode()">
+                            <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                                aria-label="switch appearance"></label>
+                        </div>
+
+                        <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+                            <input type="checkbox" id="switchforsound" onclick="playpause()">
+                            <label for="switchforsound" id="labelforsound" tabindex="0"
+                                aria-label="switch sound"></label>
+                        </div>
+                    </div><!-- setting div ends -->
+                </div><!-- contact-btn-div -->
+
             </div>
-            <div>
-                <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
-                <h4>BML Munjal University, New Delhi, India</h4>
-                <p>August 2017 - June 2021</p>
+            <!-- Resume button -->
+            <button class="resume-btn" id="resume-btn">
+
+                <div class="sign"><svg viewBox="0 0 640 512">
+                        <path
+                            d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+                    </svg></div>
+
+                <div class="text">Resume</div>
+            </button>
+        </section>
+        <!-- landing page ends here -->
+        <section class="about-section-container" id="about" data-aos="fade-up">
+            <div class="about-section">
+                <div class="about-heading">
+                    <article class="about-heading-article" tabindex="0" aria-label="About me heading">About Me;
+                    </article>
+                    <p class="aboutHeadingP"></p>
+                </div>
+
+                <div class="info-dp-section">
+                    <div class="about-info">
+                        <p tabindex="0">👋 Hey there! Gopi Maguluri here. Nice to meet you! <br><br> 👨‍💻 I'm a Machine Learning Engineer, Intern at ArangoDB. <br><br> 🎓 Pursuing Master of Science in Data Science at University of San Francisco, San Francisco.<br><br> 🔍 Specialized in LLM fine-tuning, NLP, Generative AI and Intelligent Document Processing. <br><br> 💡 3+ years of experience building production-ready AI solutions across industries. <br><br> 🏆 Winner of the Chess GPU Hackathon, with a $10,000 credit prize. <br><br> 🔧 Skilled in Python, SQL, PyTorch, TensorFlow and deploying models with Docker and FastAPI. <br><br> 🌐 Previously worked as a Data Scientist at Tatras Data, developing Gen AI, NLP solutions and Intelligent Document Processing systems. <br><br> 📊 Passionate about creating AI systems that deliver measurable business impact. <br><br> 🤝 Open to collaborating on innovative ML and AI projects. <br> <br>
+                    </p>
+                    </div>
+                    
+
+
+                    <div class="dp" data-aos="fade-up"><img src="src/img/Gopi M.jpeg" alt="" tabindex="0" 
+                            aria-label="Image of Gopi"></div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends  -->
+
+        <!-- skills section starts -->
+        <section class="skills-section-container" id="skills">
+            <div class="skills-section">
+                <div class="skills-heading" data-aos="fade-up">
+                    <article class="skills-heading-article" tabindex="0" aria-label="skills heading">Skills;
+                    </article>
+                    <p class="skillsHeadingP"></p>
+                </div>
+
+                <div class="frontend-dev-section">
+
+                    <div class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+                        aria-label="As a Data Scientist these are the skills I have">Data Scientist</div>
+                    <div class="language-speak">
+                        <article tabindex="0" aria-label="languages i speak below">>_  Skills I Bring as a Data Scientist</article>
+                    </div>
+                    <div class="languages-section">
+                        <div class="language-name" data-aos="fade-up" id="html"><img src="src/img/python.jpg"
+                                width="50">
+                            <article tabindex="0" aria-label="Python">Python</article>
+                        </div>
+
+                        <div class="language-name" data-aos="fade-up" id="html"><img src="src/img/postgresql.png" width="50">
+                            <article tabindex="0" aria-label="PostgreSQL">PostgreSQL</article>
+                        </div>
+
+                        <div class="language-name" data-aos="fade-up" id="react"><img src="src/png/satistics.jpg"
+                            width="50">
+                        <article tabindex="0" aria-label="Statistics">Statistics</article>
+                        </div>
+
+                        <div class="language-name" data-aos="fade-up" id="js"><img
+                            src="src/png/datamodel.png" width="50">
+                        <article tabindex="0" aria-label="Data Modeling">Data Modeling</article>
+                    </div>
+
+                        <div class="language-name" data-aos="fade-up" id="react"><img src="src/img/numpy.png"
+                                width="50">
+                            <article tabindex="0" aria-label="Numpy">Numpy</article>
+                        </div>
+
+                        <div class="language-name" data-aos="fade-up" id="js"><img
+                                src="src/img/pandas.png" width="50">
+                            <article tabindex="0" aria-label="Pandas">Pandas</article>
+                        </div>
+
+                        <div class="language-name" data-aos="fade-up" id="react"><img src="src/img/matplot.png"
+                            width="50">
+                        <article tabindex="0" aria-label="Matplotlib">Matplotlib</article>
+                    </div>
+
+                    <div class="language-name" data-aos="fade-up" id="js"><img
+                            src="src/png/seaborn.jpg" width="50">
+                        <article tabindex="0" aria-label="Seaborn">Seaborn</article>
+                    </div>
+
+                    </div>
+
+                </div>
+               
+                    </div>
+        </section>
+        <!-- skills section ends -->
+
+        <!-- certifications section starts here -->
+        <section class="projects-section-container" id="achivements">
+            <div class="projects-section-div">
+                <div class="projects-heading">
+                    <article class="projects-heading-article" tabindex="0" aria-label="My projects starts from here">
+                        &#60;/Certificates&#62;</article>
+                    <p class="projectsHeadingP"></p>
+                </div>
+                <div class="project-boxes-div">
+
+                    <!-- <a href="#" target="_blank">
+                        <div class="project-box project-box1" id="project-box1">
+                            <div class="image-div"><img src="src/png/powerplateform.png" width="400" height="50" alt="">
+                            </div>
+                            <div class="image-div"><img src="src/png/growdata.png" width="400" height="50" alt="">
+                            </div>
+                        </div>
+                    </a> -->
+                    <!-- ---------------------- -->
+
+                    
+                    <a href="https://drive.google.com/file/d/17upcGMSYlDl1Fgy1t3DhCqbF3unOJ3ib/view" target="_blank">
+                        <div class="project-box project-box2" id="project-box2">
+                            <div class="image-div"><img src="src/img/dgms.png" alt="" width="400" height="50"></div>
+                            <!-- <div class="image-div"><img src="src/png/basicpython.png" alt="" width="400" height="50"></div> -->
+                        </div>
+                    </a>
+
+                    <!-- ---------------------- -->
+                     <!--
+                    <a href="https://www.linkedin.com/in/ramtiwari96/" target="_blank">
+                        <div class="project-box project-box3" id="project-box3">
+                            <div class="image-div"><img src="src/png/sql_basic.png" alt="" width="400" height="50"></div>
+                            <div class="image-div"><img src="src/png/sql_inter.png" alt="" width="400" height="50"></div>
+                        </div>
+                    </a>
+                    -->
+
+                     <!-- ---------------------- -->
+                      <!--
+                     <a href="https://www.linkedin.com/in/ramtiwari96/" target="_blank">
+                        <div class="project-box project-box3" id="project-box3">
+                            <div class="image-div"><img src="src/png/technohack.png" alt="" width="400" height="50"></div>
+                            <div class="image-div"><img src="src/png/alfido.png" alt="" width="400" height="50"></div>
+
+                        </div>
+                    </a>
+                    -->
+
+                    <!-- ---------------------- -->
+                     <!--
+                    <a href="https://www.linkedin.com/in/ramtiwari96/"
+                        target="_blank">
+                        <div class="project-box project-box4" id="project-box4">
+                         
+                            <div class="image-div"><img src="src/png/cognorise.png" alt="" width="400" height="50"></div>
+                            <div class="image-div"><img src="src/png/digital_mark.jpeg" alt="" width="400" height="50"></div>
+                        </div>
+                    </a>
+                    -->
+
+
+                </div>
+            </div>
+        </section>
+        <!-- certifications section ends here -->
+
+        <!-- projects section starts here -->
+        <section class="projects-section-container" id="projects">
+            <div class="projects-section-div">
+                <div class="projects-heading">
+                    <article class="projects-heading-article" tabindex="0" aria-label="My projects starts from here">
+                        Projects</article>
+                    <p class="projectsHeadingP"></p>
+                </div>
+                <div class="project-boxes-div">
+
+                    <a href="https://github.com/Gopimaguluri267/Chess-GPU-Hackathon-Strong-Compute" target="_blank">
+                        <div class="project-box project-box1" id="project-box1">
+                            <div class="info-div">
+                                <!-- <img src="src/png/logomedi.png" alt="" class="faviconforProject" width="40"> -->
+                                <article class="ProjectHeading">Deep Learning based Chess Bot</article>
+                                <!-- <p class="ProjectDescription">Develop a system to measure 'On-time Delivery (OT) %,' 'In-full Delivery
+                                    (IF) %,' and 'On-Time in Full (OTIF) %' for customer orders daily against target
+                                    service levels..</p>
+                                <button class="cta">
+                                    <span>Go to the GitHub</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button> -->
+                            </div>
+                            <div class="image-div"><img src="src/img/chess-bot.png" width="600px" alt=""></div>
+                        </div>
+                    </a>
+
+
+                    <a href="https://github.com/Gopimaguluri267/Raag_Identification/tree/server-branch" target="_blank">
+                        <div class="project-box project-box1" id="project-box1">
+                            <div class="info-div">
+                                <!-- <img src="src/png/logomedi.png" alt="" class="faviconforProject" width="40"> -->
+                                <article class="ProjectHeading">Raga Identification in Indian Classical Music</article>
+                                <!-- <p class="ProjectDescription">Develop a system to measure 'On-time Delivery (OT) %,' 'In-full Delivery
+                                    (IF) %,' and 'On-Time in Full (OTIF) %' for customer orders daily against target
+                                    service levels..</p>
+                                <button class="cta">
+                                    <span>Go to the GitHub</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button> -->
+                            </div>
+                            <div class="image-div"><img src="src/png/raag.png" width="600px" alt=""></div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Gopimaguluri267/Nvidia-Hackathon" target="_blank">
+                        <div class="project-box project-box1" id="project-box1">
+                            <div class="info-div">
+                                <!-- <img src="src/png/logomedi.png" alt="" class="faviconforProject" width="40"> -->
+                                <article class="ProjectHeading">Fine Tuning Gemma for Law Stack Exchange</article>
+                                <!-- <p class="ProjectDescription">Develop a system to measure 'On-time Delivery (OT) %,' 'In-full Delivery
+                                    (IF) %,' and 'On-Time in Full (OTIF) %' for customer orders daily against target
+                                    service levels..</p>
+                                <button class="cta">
+                                    <span>Go to the GitHub</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button> -->
+                            </div>
+                            <div class="image-div"><img src="src/png/finetuning.png" width="600px" alt=""></div>
+                        </div>
+                    </a>
+
+                    <!-- ---------------------- -->
+                    <a href="https://github.com/Gopimaguluri267/EduGraphix" target="_blank">
+                        <div class="project-box project-box2" id="project-box2">
+                            <div class="info-div">
+                                <!-- <img src="src/svg/aquaregia-favicon.svg" alt="" class="faviconforProjectAquaregia"> -->
+                                <article class="ProjectHeading">EduGraphix</article>
+                                <!-- <p class="ProjectDescription" style="text-align: justify;">Diwali sales analysis project, implemented with Python libraries(Numpy,Pandas,Matplotlib, Seaborn), examines sales data to uncover trends, customer behavior, and performance insights, facilitating data-driven decisions for festive marketing strategies</p>
+                                <button class="cta">
+                                    <span>See the Live Site</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button> -->
+                            </div>
+                            <div class="image-div"><img src="src/img/edugraphix.png" width="600" alt=""></div>
+                        </div>
+                    </a>
+
+                    <!-- ---------------------- -->
+                    <a href="https://glms-usf-msds601-fall24.streamlit.app/" target="_blank">
+                        <div class="project-box project-box3" id="project-box3">
+                            <div class="info-div">
+                                <!-- <img src="src/svg/aquaregia-favicon.svg" alt="" class="faviconforProject"> -->
+                                <article class="ProjectHeading">Generalized Linear Models - Blog Post</article>
+                                <!-- <p class="ProjectDescription">A Contact Manager App to Save your contacts and it has a
+                                    features of calling etc.</p>
+                                <button class="cta">
+                                    <span>See the Live Site</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                        <path d="M1,5 L11,5"></path>
+                                        <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                </button> -->
+                            </div>
+                            <div class="image-div"><img src="src/img/glms.png" width="600px" alt=""></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main ends here -->
+
+    <footer>
+
+        <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+            <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+        </button>
+        <div class="footercontainer">
+            <div class="two-words">
+                <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">"Learning, Living, and
+                    Leveling Up."</article>
+            </div>
+            <div class="social-media-container">
+                <div class="getintouch-heading">
+                    <article>GetinTouch();</article>
+                </div>
+                <div class="logos">
+                    
+                    <a href="https://www.linkedin.com/in/gopimaguluri2267/" target="_blank"
+                        aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg></a>
+                    <a href="https://github.com/Gopimaguluri267" target="_blank" aria-label="My github"><svg
+                            viewBox="0 0 496 512" class="SocialHandle">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg></a>
+
+
+                    <a href="mailto:gopi.maguluri@outlook.com" target="_blank" aria-label="My E-Mail"><svg
+                            id="GmailLogo" viewBox="0 0 512 512">
+                            <path
+                                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <article>Made with ❤️ by Gopi Maguluri <i class="far fa-copyright"></i> 2025</article>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Gopi Maguluri</p>
     </footer>
+    <!-- footer ends here -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <script src="scripts.js"></script>
 </body>
+
+<script src="main.js"></script>
+<!-- for aos animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script>
+
+    document.getElementById("resume-btn").addEventListener("click", function () {
+        var fileUrl = "https://drive.google.com/file/d/17tHuesCcJLqkfZhe7nyscCdkAqrvl63q/view?usp=drive_link";
+        saveAs(fileUrl, "Gopi Maguluri Resume.pdf");
+    });
+</script>
+
 </html>

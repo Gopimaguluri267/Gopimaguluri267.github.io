@@ -1,89 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gopi Maguluri Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopi Maguluri - Data Scientist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
-<body>
-  <!-- Header Section -->
-  <header class="bg-dark text-white text-center py-5">
-    <h1>Gopi Maguluri</h1>
-    <p>Data Scientist | Machine Learning Engineer</p>
-    <a href="Gopi-Maguluri-Resume.pdf" class="btn btn-primary" download>Download Resume</a>
-  </header>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <!-- About Section -->
-  <section id="about" class="container my-5">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="profile.png" alt="Profile Picture" class="img-fluid rounded-circle">
-      </div>
-      <div class="col-md-6">
-        <h2>About Me</h2>
-        <p>I am a Data Scientist with over 3 years of experience developing and deploying end-to-end Machine Learning solutions for businesses.</p>
-        <ul>
-          <li><strong>Location:</strong> San Francisco (Open to relocate)</li>
-          <li><strong>Email:</strong> example@email.com</li>
-          <li><strong>GitHub:</strong> github.com/gopimaguluri</li>
-          <li><strong>LinkedIn:</strong> linkedin.com/in/gopimaguluri</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="bg-light py-5">
-    <div class="container text-center">
-      <h2>Skills</h2>
-      <div class="row mt-4">
-        <div class="col-md-4"><p><strong>Machine Learning</strong></p></div>
-        <div class="col-md-4"><p><strong>Deep Learning</strong></p></div>
-        <div class="col-md-4"><p><strong>NLP & Generative AI</strong></p></div>
-        <!-- Add more skills here -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="container my-5">
-    <h2 class="text-center">Projects</h2>
-    <div class="row mt-4">
-      <!-- Project Card -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="chess-bot.jpg" class="card-img-top" alt="Chess Bot Project">
-          <div class="card-body">
-            <h5 class="card-title">Deep Learning Chess Bot</h5>
-            <p class="card-text">Designed and trained a high-performance chess model from scratch on a GPU cluster.</p>
-            <a href="#" class="btn btn-primary">View on GitHub</a>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gopi Maguluri</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gopi Maguluri Resume.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <!-- Add more project cards -->
-    </div>
-  </section>
+    <!-- Header -->
+    <header class="header bg-primary text-white text-center">
+        <div class="container">
+            <img src="assets/img/profile.jpg" alt="Profile Picture" class="rounded-circle img-fluid mb-3" style="width: 150px;">
+            <h1>Gopi Maguluri</h1>
+            <p>Data Scientist | Machine Learning Engineer</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-dark text-white py-5 text-center">
-    <h2>Contact Me</h2>
-    <form action="#" method="post" class="container mt-4">
-      <input type="text" name="name" placeholder="Your Name" required class="form-control mb-3">
-      <input type="email" name="email" placeholder="Your Email" required class="form-control mb-3">
-      <textarea name="message" rows="5" placeholder="Your Message" required class="form-control mb-3"></textarea>
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Data Scientist with 3+ years of experience developing and deploying end-to-end Machine Learning solutions for businesses.</p>
+            <p>Location: San Francisco (Open to relocate)</p>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-3 bg-light">
-    © Gopi Maguluri | Built with ❤️ using Bootstrap
-  </footer>
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light py-5">
+        <div class="container">
+            <h2>Experience</h2>
+            <!-- ArangoDB -->
+            <div class="experience-item">
+                <h3>Machine Learning Engineer, Intern</h3>
+                <h4>ArangoDB, San Francisco, California</h4>
+                <p>October 2024 – Present</p>
+                <ul>
+                    <li>Developed a Natural Language to ArangoDB Query Language (AQL) system by fine-tuning LLMs using PEFT enabling seamless interaction with graph databases, improving query efficiency by 78% for customers.</li>
+                    <li>Engineered LLM fine-tuning pipelines with custom reward functions for reinforcement learning, optimizing GPU utilization and training efficiency, resulting in a 25% improvement in AQL generation accuracy.</li>
+                    <li>Developed an automated data generation pipeline for graph databases to fine-tune LLMs, built an LLM-as-a-Judge based validation system reducing manual effort by 85%.</li>
+                </ul>
+            </div>
+            <!-- Tatras Data -->
+             <div class="experience-item">
+                <h3>Data Scientist</h3>
+                <h4>Tatras Data, New Delhi, India</h4>
+                <p>July 2021 – June 2024</p>
+                <ul>
+                    <li>Developed an NLP solution to automate matching job categories based on job titles and industries by training Bi-Encoders, Cross-Encoders and fine-tuning Gemma-2B, achieving a 75% reduction in matching time.</li>
+                    <li>Developed a production-ready, dockerized API to interact with the databases in natural language by automating SQL query generation using LLMs and prompt engineering, delivering 80% accuracy.</li>
+                    <li>Developed and deployed a dockerized end-to-end solution for a text ranking use case using Word2Vec, FastText, GRUs, BERT, and Sentence Transformers, reducing customer's manual effort in ranking by 90%.</li>
+                    <li>Implemented and deployed an Intelligent Document Processing solution with document clustering and token classification pipeline by training LayoutLMv3, improving customer’s document processing efficiency by 5x.</li>
+                </ul>
+            </div>
+             <!-- Smart Energy Water -->
+             <div class="experience-item">
+                <h3>Data Scientist, Intern</h3>
+                <h4>Smart Energy Water, Noida, India</h4>
+                <p>January 2021 – June 2021</p>
+                <ul>
+                    <li>Developed a text classification solution for customer complaints using custom-trained FastText embeddings and an ensemble of Decision Trees, Random Forest and XGBoost algorithms, resulting in 92% accuracy.</li>
+                    <li>Accomplished a research based project that aimed at disaggregating household electricity consumption to the appliance level, involving data analysis, feature engineering and model training using CNNs.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./scripts.js"></script>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <!-- Deep Learning based Chess Bot -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/chess-bot.jpg" class="card-img-top" alt="Chess Bot">
+                        <div class="card-body">
+                            <h5 class="card-title">Deep Learning based Chess Bot</h5>
+                            <p class="card-text">Secured 1st place and a $10,000 credit in the Chess GPU Hackathon by designing and training a high-performance deep learning based chess model from scratch on a 48-GPU cluster.</p>
+                            <a href="#" class="btn btn-primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Fine Tuning Gemma for Law Stack Exchange -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Fine Tuning Gemma for Law Stack Exchange</h5>
+                            <p class="card-text">Preprocessed 20,000+ legal forum records with Nvidia NeMo Curator, and fine-tuned Gemma 2B model using NeMo microservices, improving tagging accuracy by 15% during the ODSC Nvidia Hackathon.</p>
+                            <a href="#" class="btn btn-primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Raga Identification in Indian Classical Music -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Raga Identification in Indian Classical Music</h5>
+                            <p class="card-text">Developed and deployed a web application to predict Ragas from audios by extracting Mel spectrograms and pitch contours, and training CNNs, achieving 82% accuracy as Data Science Intern at Sabudh Foundation.</p>
+                            <a href="#" class="btn btn-primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Reinforcement Learning</li>
+                <li>Large Language Models</li>
+                <li>Prompt Engineering</li>
+                <li>Generative AI</li>
+                <li>Statistical Modeling</li>
+                <li>TensorFlow</li>
+                <li>PyTorch</li>
+                <li>Scikit-learn</li>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>SciPy</li>
+                <li>Python</li>
+                <li>Shell</li>
+                <li>Linux</li>
+                <li>SQL</li>
+                 <li>AQL</li>
+                <li>PySpark</li>
+                <li>API development</li>
+                <li>FastAPI</li>
+                <li>Docker</li>
+                <li>Git</li>
+            </ul>
+        </div>
+    </section>
+
+   <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2>Education</h2>
+            <div>
+                <h3>Master of Science in Data Science</h3>
+                <h4>University of San Francisco, San Francisco, California</h4>
+                <p>July 2024 - June 2025</p>
+            </div>
+            <div>
+                <h3>Bachelor of Technology in Electronics and Communication Engineering</h3>
+                <h4>BML Munjal University, New Delhi, India</h4>
+                <p>August 2017 - June 2021</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Gopi Maguluri</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="scripts.js"></script>
 </body>
 </html>

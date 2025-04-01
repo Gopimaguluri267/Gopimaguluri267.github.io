@@ -1144,8 +1144,8 @@ noscript{
     content: '';
     position: absolute;
     left: -3px;
-    top: 10px;
-    height: calc(100% - 20px);
+    top: 50px;
+    height: calc(100% - 100px);
     width: 6px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -1163,17 +1163,7 @@ noscript{
 }
 
 .experience-chain .project-box::before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientforlanguage 5s ease infinite;
-    border-radius: 50%;
-    z-index: 2;
+    display: none;
 }
 
 .experience-date {
@@ -1197,12 +1187,27 @@ noscript{
     overflow: hidden;
     background: white;
     padding: 5px;
+    z-index: 3;
 }
 
 .company-logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.company-logo::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientforlanguage 5s ease infinite;
+    z-index: -1;
 }
 
 /* Update existing project box styles */

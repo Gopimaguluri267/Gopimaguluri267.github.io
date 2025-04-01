@@ -709,6 +709,7 @@ noscript{
 #info-para strong {
     font-weight: 1200;
     /* font-style: italic; */
+    text-decoration: underline;
 }
 
 .contact-btn-div{

@@ -1151,6 +1151,7 @@ noscript{
     align-items: center;
     gap: 10px;
     justify-content: center;
+    font-weight: 1200;
 }
 .projects-heading-article{
     font-size:3rem;

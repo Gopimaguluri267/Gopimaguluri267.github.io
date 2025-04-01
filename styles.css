@@ -1131,32 +1131,89 @@ noscript{
 /* skills section ends */
 /* ######################################################## */
 
-/* Add these after your existing project box styles */
-.CompanyName {
-    color: var(--color-light-blue);
-    font-size: 2.2rem;
-    font-weight: 500;
-    margin-top: -10px;
-    font-family: 'Fira Code', monospace;
+
+/* ########################################################### */
+/* Work experience section starts here */
+/* Add these styles for the work experience chain effect */
+.experience-chain {
+    position: relative;
+    padding: 20px 0;
 }
 
-.Duration {
-    color: var(--color-light-purple);
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-top: 5px;
-    font-family: 'Fira Code', monospace;
+.experience-chain .project-box {
+    position: relative;
+    margin: 0;
+    z-index: 2;
 }
 
-/* Update ProjectDescription for better spacing in experience section */
-.project-box .ProjectDescription {
-    color: var(--color-ddd-color);
-    font-size: 1.7rem;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-top: 15px;
+.experience-chain .project-box::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientforlanguage 5s ease infinite;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
-/* work exp section ends */
+
+.experience-chain .project-box:last-child::after {
+    display: none;
+}
+
+.experience-chain .project-box::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientforlanguage 5s ease infinite;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.experience-chain .project-box:last-child::before {
+    display: none;
+}
+
+/* Adjust spacing between experience boxes */
+.experience-chain .project-box {
+    margin-bottom: 60px;
+}
+
+.experience-chain .project-box:last-child {
+    margin-bottom: 0;
+}
+
+/* Add hover effect for the chain */
+.experience-chain .project-box:hover {
+    transform: translateY(-10px);
+}
+
+.experience-chain .project-box:hover::after {
+    animation: pulseChain 1.5s infinite;
+}
+
+@keyframes pulseChain {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Work experience section ends here */
+/* ########################################################### */
 
 /* projects section starts */
 .projects-section-container{

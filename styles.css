@@ -300,7 +300,7 @@ noscript{
     list-style: none;
     align-items: center;
     justify-content:flex-end;
-    gap: 40px;
+    gap: 60px;
     color: var(--color-white);
 }
 .navbar-tabs-ul li{

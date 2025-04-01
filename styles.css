@@ -600,7 +600,10 @@ noscript{
     background-size: 400% 400%;
     -webkit-animation: gradient 3s ease infinite;
     animation: gradient 3s ease infinite;
-
+    letter-spacing: 2px;
+}
+#name .jello:nth-child(5) {
+    margin-right: 10px;
 }
 @keyframes gradient {
     0% {
@@ -623,7 +626,13 @@ noscript{
     align-items: flex-start;
     color: var(--color-white);
     flex-wrap: wrap;
-    
+    letter-spacing: 2px;
+}
+#work .jello:nth-child(3), 
+#work .jello:nth-child(12),
+#work .jello:nth-child(14),
+#work .jello:nth-child(19) {
+    margin-right: 5px;
 }
 #work div{
     display: flex;

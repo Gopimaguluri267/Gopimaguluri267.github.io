@@ -30,6 +30,7 @@ html {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    scroll-padding-top: 100px;
 
 }
 :root{
@@ -709,7 +710,7 @@ noscript{
 #info-para strong {
     font-weight: 1200;
     /* font-style: italic; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .contact-btn-div{

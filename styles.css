@@ -318,6 +318,7 @@ noscript{
         cursor: url('click.png')10 12;
     /* font-family: fira code; */
     font-family: 'Fira Code', monospace;
+    font-size: 1.8rem;
 }
 
 .navbar-tabs-ul li:hover:before{

@@ -602,9 +602,7 @@ noscript{
     animation: gradient 3s ease infinite;
     letter-spacing: 2px;
 }
-#name .jello:nth-child(5) {
-    margin-right: 10px;
-}
+
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -628,12 +626,7 @@ noscript{
     flex-wrap: wrap;
     letter-spacing: 2px;
 }
-#work .jello:nth-child(3), 
-#work .jello:nth-child(12),
-#work .jello:nth-child(14),
-#work .jello:nth-child(19) {
-    margin-right: 5px;
-}
+
 #work div{
     display: flex;
 	margin: 0px 12px 0px 0px;

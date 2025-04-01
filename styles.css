@@ -706,7 +706,8 @@ noscript{
     line-height: 20px;
     font-family: 'Fira Code', monospace;
     line-height: 28px;
-    text-align: center;
+    text-align: justify;
+    margin: 0 auto;
 }
 #info-para strong {
     font-weight: 1200;

@@ -602,6 +602,9 @@ noscript{
     animation: gradient 3s ease infinite;
     letter-spacing: 2px;
 }
+#name .jello:nth-child(4) {
+    margin-right: 10px; /* Space after GOPI */
+}
 
 @keyframes gradient {
     0% {
@@ -625,6 +628,20 @@ noscript{
     color: var(--color-white);
     flex-wrap: wrap;
     letter-spacing: 2px;
+}
+#work .jello:nth-child(2) {
+    margin-right: 10px; /* Space after ML */
+}
+
+#work .jello:nth-child(10) {
+    margin-right: 10px; /* Space after Engineer */
+}
+#work .jello:nth-child(11) {
+    margin-right: 10px; /* Space after | */
+}
+
+#work .jello:nth-child(15) {
+    margin-right: 10px; /* Space after Data */
 }
 
 #work div{

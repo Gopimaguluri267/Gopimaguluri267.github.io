@@ -603,7 +603,7 @@ noscript{
     letter-spacing: 2px;
 }
 #name .jello:nth-child(4) {
-    margin-right: 10px; /* Space after GOPI */
+    margin-right: 14px; /* Space after GOPI */
 }
 
 @keyframes gradient {
@@ -630,7 +630,7 @@ noscript{
     letter-spacing: 2px;
 }
 #work .jello:nth-child(2) {
-    margin-right: 10px; /* Space after ML */
+    margin-right: 12px; /* Space after ML */
 }
 
 #work .jello:nth-child(10) {
@@ -641,7 +641,7 @@ noscript{
 }
 
 #work .jello:nth-child(15) {
-    margin-right: 10px; /* Space after Data */
+    margin-right: 12px; /* Space after Data */
 }
 
 #work div{

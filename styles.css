@@ -1132,8 +1132,6 @@ noscript{
 
 /* ########################################################### */
 /* Work experience section starts here */
-/* Add these styles for the work experience chain effect */
-/* Add these new styles for the experience timeline */
 .experience-chain {
     position: relative;
     padding: 20px 0;
@@ -1147,9 +1145,8 @@ noscript{
     top: 50px;
     height: calc(100% - 100px);
     width: 6px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientforlanguage 5s ease infinite;
+    background: linear-gradient(180deg, #71cbff, #8000ff);
+    z-index: 1;
 }
 
 .experience-chain .project-box {
@@ -1160,10 +1157,6 @@ noscript{
 
 .experience-chain .project-box:last-child {
     margin-bottom: 0;
-}
-
-.experience-chain .project-box::before {
-    display: none;
 }
 
 .experience-date {
@@ -1188,6 +1181,7 @@ noscript{
     background: white;
     padding: 5px;
     z-index: 3;
+    border: 2px solid #8000ff;
 }
 
 .company-logo img {
@@ -1199,14 +1193,12 @@ noscript{
 .company-logo::after {
     content: '';
     position: absolute;
-    left: -5px;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
     border-radius: 50%;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientforlanguage 5s ease infinite;
+    background: #8000ff;
     z-index: -1;
 }
 

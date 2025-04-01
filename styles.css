@@ -1151,7 +1151,6 @@ noscript{
     align-items: center;
     gap: 10px;
     justify-content: center;
-    font-weight: 1200;
 }
 .projects-heading-article{
     font-size:3rem;
@@ -1344,6 +1343,16 @@ noscript{
     background-image: -webkit-gradient(linear,left top,right top,from(#0f7878),to(#f09bb9));
     background-image: -webkit-linear-gradient(left,#0f7878,#f09bb9);
     background-image: linear-gradient(90deg,#0f7878,#f09bb9);
+}
+.light-mode .about-heading-article,
+.light-mode .skills-heading-article,
+.light-mode .projects-heading-article {
+    background-image: -webkit-gradient(linear,left top,right top,from(#006666),to(#8b1a4a));
+    background-image: -webkit-linear-gradient(left,#006666,#8b1a4a);
+    background-image: linear-gradient(90deg,#006666,#8b1a4a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #backtotopbutton{

@@ -74,6 +74,10 @@
                         <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
                             &#60;/Skills&#62;</li>
                     </a>
+                    <a href="#experience" aria-label="experience menu button">
+                        <li class="experience" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="600">
+                            &#60;/Experience&#62;</li>
+                    </a>
                     <a href="#projects" aria-label="projects menu button">
                         <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
                             &#60;/Projects&#62;</li>
@@ -118,6 +122,10 @@
                 <a href="#skills" tabindex="0" aria-label="skills menu button">
                     <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
                         &#60;/Skills&#62;</li>
+                </a>
+                <a href="#experience" tabindex="0" aria-label="experience menu button">
+                    <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+                        &#60;/Experience&#62;</li>
                 </a>
                 <a href="#projects" tabindex="0" aria-label="projects menu button">
                     <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
@@ -347,6 +355,71 @@
                     </div>
         </section>
         <!-- skills section ends -->
+
+
+        <!-- work experience section starts here -->
+        <section class="projects-section-container" id="experience">
+            <div class="projects-section-div">
+                <div class="projects-heading">
+                    <p class="projectsHeadingP"></p>
+                    <article class="projects-heading-article" tabindex="0" aria-label="My work experience">WORK EXPERIENCE</article>
+                    <p class="projectsHeadingP"></p>
+                </div>
+                <div class="project-boxes-div">
+                    <!-- ArangoDB Experience -->
+                    <div class="project-box">
+                        <div class="info-div">
+                            <article class="ProjectHeading">Machine Learning Engineer Intern</article>
+                            <article class="CompanyName">ArangoDB, San Francisco</article>
+                            <article class="Duration">Jan 2024 - Present</article>
+                            <p class="ProjectDescription">
+                                • Developing natural language interfaces for graph databases using LLMs and vector embeddings<br><br>
+                                • Implementing text ranking solutions and intelligent document processing systems<br><br>
+                                • Building end-to-end ML pipelines for production deployment
+                            </p>
+                        </div>
+                        <div class="image-div">
+                            <img src="src/img/arango.png" width="600px" alt="ArangoDB logo">
+                        </div>
+                    </div>
+
+                    <!-- Tatras Data Experience -->
+                    <div class="project-box">
+                        <div class="info-div">
+                            <article class="ProjectHeading">Data Scientist</article>
+                            <article class="CompanyName">Tatras Data, Hyderabad</article>
+                            <article class="Duration">Jun 2022 - Dec 2023</article>
+                            <p class="ProjectDescription">
+                                • Led development of NLP and computer vision solutions for document processing<br><br>
+                                • Implemented ML models for text classification and information extraction<br><br>
+                                • Optimized model performance and deployed solutions using Docker and FastAPI
+                            </p>
+                        </div>
+                        <div class="image-div">
+                            <img src="src/img/tatras.png" width="600px" alt="Tatras Data logo">
+                        </div>
+                    </div>
+
+                    <!-- Previous Experience -->
+                    <div class="project-box">
+                        <div class="info-div">
+                            <article class="ProjectHeading">Machine Learning Engineer</article>
+                            <article class="CompanyName">Cognizant, Hyderabad</article>
+                            <article class="Duration">Jul 2020 - May 2022</article>
+                            <p class="ProjectDescription">
+                                • Developed and deployed ML models for predictive maintenance and anomaly detection<br><br>
+                                • Created data pipelines for processing and analyzing large-scale industrial data<br><br>
+                                • Implemented automated reporting systems using Python and SQL
+                            </p>
+                        </div>
+                        <div class="image-div">
+                            <img src="src/img/cognizant.png" width="600px" alt="Cognizant logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- work exp section ends here -->
 
 
         <!-- projects section starts here -->

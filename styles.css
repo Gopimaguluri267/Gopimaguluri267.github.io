@@ -1145,8 +1145,9 @@ noscript{
     top: 50px;
     height: calc(100% - 100px);
     width: 6px;
-    background: linear-gradient(180deg, #71cbff, #8000ff);
-    z-index: 1;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientforlanguage 5s ease infinite;
 }
 
 .experience-chain .project-box {
@@ -1157,6 +1158,10 @@ noscript{
 
 .experience-chain .project-box:last-child {
     margin-bottom: 0;
+}
+
+.experience-chain .project-box::before {
+    display: none;
 }
 
 .experience-date {
@@ -1181,7 +1186,6 @@ noscript{
     background: white;
     padding: 5px;
     z-index: 3;
-    border: 2px solid #8000ff;
 }
 
 .company-logo img {
@@ -1193,12 +1197,14 @@ noscript{
 .company-logo::after {
     content: '';
     position: absolute;
-    left: -2px;
-    top: -2px;
-    right: -2px;
-    bottom: -2px;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
     border-radius: 50%;
-    background: #8000ff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientforlanguage 5s ease infinite;
     z-index: -1;
 }
 

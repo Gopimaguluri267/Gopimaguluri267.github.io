@@ -1036,6 +1036,7 @@ noscript{
     align-items: center;
     height: 50px;
     justify-content: center;
+    margin-top: 20px;
 }
 .language-speak article{
     font-size: 2rem;
@@ -1046,7 +1047,7 @@ noscript{
 }
 .frontend-dev-section{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .frontend-dev-heading{
     width: 100%;

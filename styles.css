@@ -146,9 +146,7 @@ body{
     transition-duration: .5s;
 
 }
-strong {
-    font-weight: bold;
-}
+
 
 #labelforvisualmode {
     position: relative;
@@ -708,6 +706,11 @@ noscript{
     font-family: 'Fira Code', monospace;
     line-height: 28px;
 }
+#info-para strong {
+    font-weight: 700;
+    font-style: italic;
+}
+
 .contact-btn-div{
     width: 100%;
     padding-top: 50px;

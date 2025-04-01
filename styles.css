@@ -82,7 +82,7 @@ body{
 .setting-container{
     width: 60px;
     height: 50px;
-    margin-left:50px;
+    margin-left:20px;
     display: flex;
     align-items: center;
     transform-origin: left;
@@ -720,8 +720,9 @@ noscript{
     padding-top: 50px;
     height: fit-content;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
 }
 .letsTalkBtn {
     position: relative;
@@ -738,6 +739,7 @@ noscript{
     cursor: url('click.png'),
     move;
         cursor: url('click.png')10 12;
+    margin-left: 0;
   }
   
   .letsTalkBtn-text {
@@ -1787,7 +1789,7 @@ transition-duration: 1.6s;
         gap: 20px;
     }
     .setting-container {
-        margin-left: 0px;
+        margin-left: 0;
     }
     .dp::before{
         display: none;

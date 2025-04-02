@@ -78,6 +78,10 @@
                         <li class="experience" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="600">
                             &#60;/Experience&#62;</li>
                     </a>
+                    <a href="#education" aria-label="education menu button">
+                        <li class="education" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="550">
+                            &#60;/Education&#62;</li>
+                    </a>
                     <a href="#projects" aria-label="projects menu button">
                         <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
                             &#60;/Projects&#62;</li>
@@ -126,6 +130,10 @@
                 <a href="#experience" tabindex="0" aria-label="experience menu button">
                     <li id="experience-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
                         &#60;/Experience&#62;</li>
+                </a>
+                <a href="#education" tabindex="0" aria-label="education menu button">
+                    <li id="education-mobile-tab" class="mobile-navbar-tabs-li education" onclick="hidemenubyli()">
+                        &#60;/Education&#62;</li>
                 </a>
                 <a href="#projects" tabindex="0" aria-label="projects menu button">
                     <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
@@ -407,17 +415,19 @@
 
                     <!-- Cognizant Experience -->
                     <div class="project-box" data-aos="fade-up">
-                        <div class="experience-date">Jan 2021 - June 2021</div>
                         <div class="company-logo">
-                            <img src="src/img/sew_logo.jpeg" alt="SEW logo">
+                            <img src="src/img/sew_logo.jpeg" alt="Tatras logo">
                         </div>
                         <div class="info-div">
-                            <article class="ProjectHeading">Data Scientist, Intern</article>
+                            <article class="ProjectHeading">
+                                Data Scientist
+                                <div class="experience-date">Jan 2021 - June 2021</div>
+                            </article>
                             <article class="CompanyInfo">Smart Energy Water • Noida</article>
                             <p class="ProjectDescription">
-                                • Developed and deployed ML models for predictive maintenance and anomaly detection<br>
-                                • Created data pipelines for processing and analyzing large-scale industrial data<br>
-                                • Implemented automated reporting systems using Python and SQL
+                                • Developing natural language interfaces for graph databases using LLMs and vector embeddings<br>
+                                • Implementing text ranking solutions and intelligent document processing systems<br>
+                                • Building end-to-end ML pipelines for production deployment
                             </p>
                         </div>
                     </div>
@@ -425,6 +435,47 @@
             </div>
         </section>
         <!-- work experience section ends here -->
+
+        <!-- Education section starts here -->
+        <section class="projects-section-container" id="education">
+            <div class="projects-section-div">
+                <div class="projects-heading">
+                    <p class="projectsHeadingP"></p>
+                    <article class="projects-heading-article" tabindex="0" aria-label="My education">EDUCATION</article>
+                    <p class="projectsHeadingP"></p>
+                </div>
+                <div class="project-boxes-div education-chain">
+                    <!-- USF Education -->
+                    <div class="project-box" data-aos="fade-up">
+                        <div class="university-logo">
+                            <img src="src/img/usf_logo.png" alt="USF logo">
+                        </div>
+                        <div class="info-div">
+                            <article class="ProjectHeading">
+                                Master of Science in Data Science
+                                <div class="experience-date">July 2024 - June 2025</div>
+                            </article>
+                            <article class="CompanyInfo">University of San Francisco • San Francisco, California</article>
+                        </div>
+                    </div>
+
+                    <!-- BML Munjal University Education -->
+                    <div class="project-box" data-aos="fade-up">
+                        <div class="university-logo">
+                            <img src="src/img/bml_logo.png" alt="BML logo">
+                        </div>
+                        <div class="info-div">
+                            <article class="ProjectHeading">
+                                Bachelor of Technology in Electronics and Communication Engineering
+                                <div class="experience-date">August 2017 - June 2021</div>
+                            </article>
+                            <article class="CompanyInfo">BML Munjal University • New Delhi, India</article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education section ends here -->
 
         <!-- projects section starts here -->
         <section class="projects-section-container" id="projects">

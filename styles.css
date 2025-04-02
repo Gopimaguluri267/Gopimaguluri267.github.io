@@ -1241,6 +1241,60 @@ noscript{
 /* Work experience section ends here */
 /* ########################################################### */
 
+
+/* Education section starts here*/
+/* ########################################################### */
+/* Education section styles - similar to experience chain */
+.education-chain {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 50px;
+}
+
+.education-chain::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 50px;
+    height: calc(100% - 100px);
+    width: 6px;
+    background: linear-gradient(180deg, #71cbff, #8000ff);
+    z-index: 1;
+}
+
+.education-chain .project-box {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 50px;
+}
+
+.education-chain .project-box:last-child {
+    margin-bottom: 0;
+}
+
+.education-chain .university-logo {
+    position: absolute;
+    left: -23px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: white;
+    padding: 5px;
+    z-index: 3;
+    border: 2px solid white;
+}
+
+.education-chain .university-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* ########################################################### */
+
+/* Education section ends here*/
+
 /* projects section starts */
 .projects-section-container{
     margin: 150px 0;

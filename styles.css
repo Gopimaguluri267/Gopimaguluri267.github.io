@@ -1137,7 +1137,7 @@ noscript{
 .experience-chain {
     position: relative;
     padding: 20px 0;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .experience-chain::before {
@@ -1147,9 +1147,8 @@ noscript{
     top: 50px;
     height: calc(100% - 100px);
     width: 6px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientforlanguage 5s ease infinite;
+    background: linear-gradient(180deg, #71cbff, #8000ff);
+    z-index: 1;
 }
 
 .experience-chain .project-box {
@@ -1167,20 +1166,18 @@ noscript{
 }
 
 .experience-date {
-    position: absolute;
-    left: -150px;
-    top: 0;
-    width: 120px;
-    text-align: right;
-    color: var(--color-white);
-    font-size: 1.4rem;
+    position: static;
+    color: var(--color-ddd-color);
+    font-size: 1.6rem;
     font-family: 'Fira Code', monospace;
+    margin-left: 10px;
+    display: inline-block;
 }
 
 .company-logo {
     position: absolute;
-    left: -35px;
-    top: 30px;
+    left: -23px;
+    top: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1188,6 +1185,7 @@ noscript{
     background: white;
     padding: 5px;
     z-index: 3;
+    border: 2px solid white;
 }
 
 .company-logo img {
@@ -1220,12 +1218,14 @@ noscript{
 .experience-chain .info-div {
     width: 100%;
     padding: 20px 30px;
-    gap: 10px;
 }
 
 .experience-chain .ProjectHeading {
     font-size: 2.8rem;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .experience-chain .CompanyInfo {

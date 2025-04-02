@@ -1235,8 +1235,10 @@ noscript{
 }
 
 .experience-chain .ProjectDescription {
+    color: var(--color-ddd-color);
     font-size: 1.6rem;
     line-height: 1.6;
+    opacity: 0.9;
 }
 /* Work experience section ends here */
 /* ########################################################### */
@@ -1462,9 +1464,10 @@ noscript{
     font-weight: 700;
 }
 .ProjectDescription{
-    color: gray;
-    font-size: 1.7rem;
-    font-weight: 400;
+    color: var(--color-ddd-color);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    opacity: 0.9;
 }
 /* Project visit button */
 .cta {

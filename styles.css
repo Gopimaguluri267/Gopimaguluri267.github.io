@@ -1308,9 +1308,8 @@ noscript{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 15px;
     width: 100%;
-    white-space: nowrap;
 }
 
 .education-chain .education-date {
@@ -1318,7 +1317,8 @@ noscript{
     color: var(--color-ddd-color);
     font-weight: normal;
     white-space: nowrap;
-    margin-left: 15px;
+    margin-left: 0;
+    display: inline-block;
 }
 
 .education-chain .UniversityInfo {
@@ -1326,7 +1326,6 @@ noscript{
     color: var(--color-white);
     margin: 10px 0;
     text-align: left;
-    white-space: nowrap;
 }
 
 .education-chain .CourseInfo {

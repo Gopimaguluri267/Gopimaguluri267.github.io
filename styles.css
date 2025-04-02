@@ -1,16 +1,21 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
+} */
+/* 
 *::selection {
     background-color: transparent;
-}
+} */
 
+::selection {
+    background-color: var(--color-purple); /* or any color you prefer */
+    color: white;
+}
+/* 
 *::-moz-selection {
     background: transparent;
-}
+} */
 
 * {
     -webkit-tap-highlight-color: transparent;
@@ -345,10 +350,10 @@ noscript{
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none; */
 
 }
 .hey{

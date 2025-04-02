@@ -1299,7 +1299,7 @@ noscript{
 .education-chain .info-div {
     width: 100%;
     padding: 20px 30px;
-    max-width: 800px; /* Limit the width to maintain readability */
+    max-width: none; /* Limit the width to maintain readability */
 }
 
 .education-chain .ProjectHeading {
@@ -1310,6 +1310,7 @@ noscript{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    white-space: nowrap;
 }
 
 .education-chain .education-date {
@@ -1325,6 +1326,7 @@ noscript{
     color: var(--color-white);
     margin: 10px 0;
     text-align: left;
+    white-space: nowrap;
 }
 
 .education-chain .CourseInfo {

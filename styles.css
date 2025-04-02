@@ -1267,9 +1267,8 @@ noscript{
     margin-bottom: 60px;
     padding-left: 50px;
     width: 100%;
-    min-height: 200px;
-    display: flex;
-    flex-direction: row;
+    min-height: auto;
+    height: auto;
 }
 
 .education-chain .project-box:last-child {
@@ -1302,12 +1301,12 @@ noscript{
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .education-chain .ProjectHeading {
     font-size: 2.8rem;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1327,12 +1326,14 @@ noscript{
 .education-chain .UniversityInfo {
     font-size: 2rem;
     color: var(--color-white);
+    margin: 0;
 }
 
 .education-chain .CourseInfo {
     font-size: 1.6rem;
     color: var(--color-ddd-color);
     line-height: 1.6;
+    margin: 0;
 }
 /* ########################################################### */
 

@@ -1506,18 +1506,20 @@ noscript{
 }
 
 .project-btn {
-    padding: 8px 16px;
+    padding: 10px 20px;
+    min-width: 140px;
     border: none;
     border-radius: 5px;
     font-size: 1.4rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
     color: white;
-    background: var(--color-navbarBorder-dark);
+    background: #2196F3;  /* Default blue color for project details */
 }
 
 .project-btn i {
@@ -1527,14 +1529,15 @@ noscript{
 .project-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0.9;
 }
 
 .project-btn.github {
-    background: #333;
+    background: #6e5494;  /* GitHub purple color */
 }
 
 .project-btn.demo {
-    background: #4CAF50;
+    background: #4CAF50;  /* Keep the green for demo */
 }
 
 .project-full-description {
@@ -1568,37 +1571,26 @@ noscript{
     left: -20px;
 }
 
+.light-mode .project-full-description {
+    background: rgba(0, 0, 0, 0.05);
+}
+
 @media screen and (max-width: 768px) {
-    .project-box {
-        flex-direction: column;
-        height: auto;
+    .project-full-description {
+        padding: 15px;
+        font-size: 14px;
     }
+}
 
-    .info-div {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .image-div {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .image-div img {
-        width: 100%;
-        height: auto;
-    }
-
+@media screen and (max-width: 768px) {
     .project-buttons {
         flex-wrap: wrap;
     }
-
-    .ProjectHeading {
-        font-size: 2.4rem;
-    }
-
-    .ProjectDescription {
-        font-size: 1.6rem;
+    
+    .project-btn {
+        padding: 8px 16px;
+        min-width: 120px;
+        font-size: 1.3rem;
     }
 }
 /* projects ends */

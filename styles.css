@@ -2229,39 +2229,3 @@ transition-duration: 1.6s;
   /* responsive code above */
   
   
-
-/* Container for buttons */
-.button-container {
-    display: flex; /* Align items in a row */
-    align-items: center; /* Center items vertically */
-    gap: 10px; /* Space between buttons */
-}
-
-/* Style for the Learn More button */
-.learn-more-btn {
-    background-color: var(--color-purple); /* Background color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    padding: 8px 12px; /* Padding for button */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for background color */
-}
-
-/* Hover effect for the Learn More button */
-.learn-more-btn:hover {
-    background-color: darken(var(--color-purple), 10%); /* Darken background on hover */
-}
-
-/* Style for the GitHub icon */
-.github-icon {
-    width: 24px; /* Width of the icon */
-    height: 24px; /* Height of the icon */
-    fill: var(--color-purple); /* Fill color */
-    transition: fill 0.3s; /* Smooth transition for fill color */
-}
-
-/* Hover effect for the GitHub icon */
-.github-icon:hover {
-    fill: darken(var(--color-purple), 10%); /* Darken fill color on hover */
-}

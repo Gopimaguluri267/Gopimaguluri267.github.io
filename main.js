@@ -204,20 +204,3 @@ const windowResize = (event) => {
 
 window.addEventListener('mousemove', mouseMove);
 window.addEventListener('resize', windowResize);
-
-document.addEventListener('DOMContentLoaded', function() {
-    const learnMoreTexts = document.querySelectorAll('.learn-more-text');
-    
-    learnMoreTexts.forEach(text => {
-        text.addEventListener('click', function() {
-            const additionalInfo = this.nextElementSibling;
-            const isExpanded = additionalInfo.classList.contains('expanded');
-            
-            // Toggle the expanded class
-            additionalInfo.classList.toggle('expanded');
-            
-            // Update text to indicate the action
-            this.textContent = isExpanded ? 'learn more...' : 'show less';
-        });
-    });
-});

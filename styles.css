@@ -1225,11 +1225,10 @@ noscript{
 }
 
 .experience-chain .ProjectHeading {
-    font-size: 2.8rem;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
 }
 
 .experience-chain .CompanyInfo {
@@ -1239,10 +1238,10 @@ noscript{
 }
 
 .experience-chain .ProjectDescription {
-    color: var(--color-ddd-color);
     font-size: 1.6rem;
     line-height: 1.6;
-    opacity: 0.9;
+    color: var(--color-ddd-color);
+    margin-bottom: 2rem;
 }
 
 /* Add these styles after the experience-chain styles */
@@ -1448,156 +1447,66 @@ noscript{
     text-decoration: none;
     width: 100%;
 }
-.project-box{
-    background-color: rgba(255, 255, 255, 0.005);
+.project-box {
     width: 100%;
-    height: 400px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    transition-duration: .3s;
-    cursor: url('click.png');
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
-    position: relative;
-    box-shadow: 0px 10px 20px var(--color-shadowDark);
-}
-.language-gradient-class{
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.113);
-}
-.project-box:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradientforlanguage 5s ease infinite;
-    top: 0;
-    left: 0;
-}
-.info-div{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    padding: 0 40px;
-}
-.faviconforProject{
-    background-color: white;
-    width: 20px;
-    border-radius: 50%;
-}
-.faviconforProjectAquaregia{
-    width: 20px;
-}
-.image-div{
-    width: 60%;
-    height: 100%;
-   
-    padding-top: 70px;
-    padding-left: 10px;
-    text-align: center;
-}
-.image-div img{
-    height: 100%;
-    /* border-top-left-radius:10px ; */
-   
-}
-.ProjectHeading{
-    color: var(--color-white);
-    font-size: 3.4rem;
-    font-weight: 700;
-}
-.ProjectDescription{
-    color: var(--color-ddd-color);
-    font-size: 1.8rem;
-    line-height: 1.6;
-    opacity: 0.9;
-}
-/* Project visit button */
-.cta {
-    position: relative;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-    cursor: url('click.png');
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
-   }
-   
-   .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    /* background: #b1dae7; */
-    background-color: var(--color-navbarBorder-dark);
-    width: 45px;
-    height: 45px;
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
     transition: all 0.3s ease;
-   }
-   
-   .cta span {
-    position: relative;
-    /* font-family: "Ubuntu", sans-serif; */
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    /* color: #234567; */
-    color: var(--color-light-blue);
-   }
-   
-   .cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    /* stroke: #234567; */
-    stroke: var(--color-light-blue);
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-   }
-   
-   .cta:hover:before {
-    width: 100%;
-    /* background: #b1dae7; */
-   }
-   .cta:hover span{
-    color:white;
-   }
-   .cta:hover svg{
-    stroke:white;
-   }
-   
-   .cta:hover svg {
-    transform: translateX(0);
-   }
-   
-   .cta:active {
-    transform: scale(0.95);
-   }
-/* Project visit button */
-.project-box:hover{
-    transform: translate(-5px,-10px);
-    transition-duration: .3s;
 }
 
+.info-div {
+    flex: 1;
+    padding-right: 2rem;
+    max-width: 50%;
+}
+
+.image-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+.image-div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-boxes-div a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .project-box {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .info-div {
+        max-width: 100%;
+        padding-right: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    .image-div {
+        max-width: 100%;
+    }
+}
 /* projects ends */
 
 

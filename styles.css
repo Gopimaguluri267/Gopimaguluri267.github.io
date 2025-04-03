@@ -1285,18 +1285,17 @@ noscript{
 }
 
 /* Update existing styles */
-/* .experience-chain .project-box {
+.experience-chain .project-box {
     min-height: auto;
     height: auto;
     transition: all 0.3s ease;
-} */
+}
 /* Work experience section ends here */
 /* ########################################################### */
 
 
 /* Education section starts here*/
 /* ########################################################### */
-/* Education section styles - similar to experience chain */
 .education-chain {
     position: relative;
     padding: 20px 0;

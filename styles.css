@@ -299,8 +299,8 @@ noscript{
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content:space-between;
-    gap: 60px;
+    justify-content:space-around;
+    gap: 30px;
     color: var(--color-white);
 }
 .navbar-tabs-ul li{
@@ -320,6 +320,7 @@ noscript{
     /* font-family: fira code; */
     font-family: 'Fira Code', monospace;
     font-size: 1.8rem;
+    padding: 0 5px;
 }
 
 .navbar-tabs-ul li:hover:before{

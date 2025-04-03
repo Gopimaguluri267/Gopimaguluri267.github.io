@@ -1176,10 +1176,10 @@ noscript{
 
 .company-logo {
     position: absolute;
-    left: -23px;
+    left: -30px;
     top: 0;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     overflow: hidden;
     background: white;
@@ -2226,23 +2226,4 @@ transition-duration: 1.6s;
   
   /* responsive code above */
   
-  /* Increase icon size in work experience and education */
-.university-logo img.large-icon {
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
-}
-
-/* Style for the relevant courses */
-.CourseInfo {
-    font-weight: bold;
-    color: var(--color-highlight); /* Define this color in your CSS variables */
-}
-
-/* Style for the course list */
-.course-list {
-    list-style-type: disc; /* Use bullet points */
-    margin-left: 20px; /* Indent the list */
-    font-size: 1.4rem; /* Adjust font size as needed */
-    color: var(--color-ddd-color); /* Ensure this matches your design */
-}
   

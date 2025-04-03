@@ -206,18 +206,18 @@ window.addEventListener('mousemove', mouseMove);
 window.addEventListener('resize', windowResize);
 
 document.addEventListener('DOMContentLoaded', function() {
-    const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+    const learnMoreTexts = document.querySelectorAll('.learn-more-text');
     
-    learnMoreBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+    learnMoreTexts.forEach(text => {
+        text.addEventListener('click', function() {
             const additionalInfo = this.nextElementSibling;
             const isExpanded = additionalInfo.classList.contains('expanded');
             
             // Toggle the expanded class
             additionalInfo.classList.toggle('expanded');
             
-            // Update button text
-            this.textContent = isExpanded ? 'Learn More' : 'Show Less';
+            // Update text to indicate the action
+            this.textContent = isExpanded ? 'learn more...' : 'show less';
         });
     });
 });

@@ -1156,6 +1156,8 @@ noscript{
     position: relative;
     margin-bottom: 60px;
     padding-left: 50px;
+    display: flex; /* Ensure flex display */
+    align-items: flex-start; /* Align items to the start */
 }
 
 .experience-chain .project-box:last-child {
@@ -1187,6 +1189,7 @@ noscript{
     padding: 5px;
     z-index: 3;
     border: 2px solid white;
+    transition: transform 0.3s; /* Add transition for smooth effect */
 }
 
 .company-logo img {
@@ -1282,11 +1285,11 @@ noscript{
 }
 
 /* Update existing styles */
-.experience-chain .project-box {
+/* .experience-chain .project-box {
     min-height: auto;
     height: auto;
     transition: all 0.3s ease;
-}
+} */
 /* Work experience section ends here */
 /* ########################################################### */
 
@@ -1318,6 +1321,8 @@ noscript{
     width: 100%;
     min-height: auto;
     height: auto;
+    display: flex; /* Ensure flex display */
+    align-items: flex-start; /* Align items to the start */
 }
 
 .education-chain .project-box:last-child {
@@ -1336,6 +1341,7 @@ noscript{
     padding: 5px;
     z-index: 3;
     border: 2px solid white;
+    transition: transform 0.3s; /* Add transition for smooth effect */
 }
 
 .education-chain .university-logo img {

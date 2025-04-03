@@ -1298,7 +1298,7 @@ noscript{
 /* ########################################################### */
 /* Education section styles - similar to experience chain */
 .education-chain {
-    position: relative;
+    position: absolute;
     padding: 20px 0;
     margin-left: 50px;
 }

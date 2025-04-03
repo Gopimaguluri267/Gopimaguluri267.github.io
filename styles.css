@@ -1519,7 +1519,7 @@ noscript{
     transition: all 0.3s ease;
     text-decoration: none;
     color: white;
-    background: #2196F3;  /* Default blue color for project details */
+    background: #6b8cae;  /* Medium blue-gray for project details */
 }
 
 .project-btn i {
@@ -1533,11 +1533,11 @@ noscript{
 }
 
 .project-btn.github {
-    background: #6e5494;  /* GitHub purple color */
+    background: #4a4a4a;  /* Medium gray for source code */
 }
 
 .project-btn.demo {
-    background: #4CAF50;  /* Keep the green for demo */
+    background: #23d5ab;  /* Turquoise for live demo */
 }
 
 .project-full-description {

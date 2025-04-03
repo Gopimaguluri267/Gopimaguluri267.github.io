@@ -2270,49 +2270,48 @@ transition-duration: 1.6s;
 }
 
 .project-description {
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-  }
-  
-  .project-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .github-btn {
-    background-color: #333;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .github-btn i {
-    font-size: 16px;
-  }
-  
-  .github-btn:hover {
-    opacity: 0.8;
-  }
-  
-  .learn-more-btn {
-    background-color: #007BFF;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .project-full-description {
-    display: none;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-    border-left: 3px solid #007BFF;
-    padding-left: 10px;
-  }
-  
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.github-btn {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.github-btn i {
+  font-size: 16px;
+}
+
+.github-btn:hover {
+  opacity: 0.8;
+}
+
+.learn-more-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.project-full-description {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  border-left: 3px solid #007BFF;
+  padding-left: 10px;
+}

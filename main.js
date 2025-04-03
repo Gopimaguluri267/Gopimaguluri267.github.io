@@ -214,11 +214,3 @@ function toggleDescription(id) {
   }
 }
 
-function toggleDescription(projectId) {
-  const description = document.getElementById(projectId + '-description');
-  if (description.style.display === 'none' || description.style.display === '') {
-    description.style.display = 'block';
-  } else {
-    description.style.display = 'none';
-  }
-}

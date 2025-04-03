@@ -1447,64 +1447,158 @@ noscript{
     text-decoration: none;
     width: 100%;
 }
-.project-box {
+.project-box{
+    background-color: rgba(255, 255, 255, 0.005);
     width: 100%;
+    height: 400px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    margin: 1rem 0;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(4px);
-    transition: all 0.3s ease;
+    transition-duration: .3s;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 10px 20px var(--color-shadowDark);
+    margin-bottom: 30px;
 }
 
-.info-div {
-    flex: 1;
-    padding-right: 2rem;
-    max-width: 50%;
-}
-
-.image-div {
-    flex: 1;
+.info-div{
+    width: 50%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
-    max-width: 50%;
+    gap: 20px;
+    padding: 0 40px;
 }
 
-.image-div img {
-    max-width: 100%;
-    height: auto;
+.image-div{
+    width: 50%;
+    height: 100%;
+    padding-top: 70px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.image-div img{
+    height: 80%;
+    width: auto;
     border-radius: 8px;
 }
 
-.project-boxes-div a {
-    text-decoration: none;
-    color: inherit;
-    width: 100%;
+.ProjectHeading{
+    color: var(--color-white);
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
-.project-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.ProjectDescription{
+    color: var(--color-ddd-color);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    background: var(--color-navbarBorder-dark);
+}
+
+.project-btn i {
+    font-size: 1.4rem;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.project-btn.github {
+    background: #333;
+}
+
+.project-btn.demo {
+    background: #4CAF50;
+}
+
+.project-full-description {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px 0 30px 0;
+    font-size: 1.6rem;
+    color: var(--color-ddd-color);
+    backdrop-filter: blur(4px);
+}
+
+.project-full-description p {
+    margin-bottom: 15px;
+}
+
+.project-full-description ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.project-full-description ul li {
+    margin: 8px 0;
+    position: relative;
+}
+
+.project-full-description ul li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -20px;
 }
 
 @media screen and (max-width: 768px) {
     .project-box {
         flex-direction: column;
-        padding: 1.5rem;
+        height: auto;
     }
 
     .info-div {
-        max-width: 100%;
-        padding-right: 0;
-        padding-bottom: 1.5rem;
+        width: 100%;
+        padding: 20px;
     }
 
     .image-div {
-        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .image-div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-buttons {
+        flex-wrap: wrap;
+    }
+
+    .ProjectHeading {
+        font-size: 2.4rem;
+    }
+
+    .ProjectDescription {
+        font-size: 1.6rem;
     }
 }
 /* projects ends */
@@ -2045,13 +2139,6 @@ transition-duration: 1.6s;
     }
     .hey{
         left: 70px;
-    }
-    .logo:hover{
-        transform: translateY(200px);
-        transition-duration: 1s;
-    }
-    #hello-friend{
-        font-size: 2.5rem;
     }
     .landing-page-container{
         height: 85vh;

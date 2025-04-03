@@ -1240,6 +1240,52 @@ noscript{
     line-height: 1.6;
     opacity: 0.9;
 }
+
+/* Add these styles after the experience-chain styles */
+.learn-more-section {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.learn-more-btn {
+    background: transparent;
+    border: 1px solid var(--color-purple);
+    color: var(--color-purple);
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Fira Code', monospace;
+}
+
+.learn-more-btn:hover {
+    background: var(--color-purple);
+    color: white;
+}
+
+.additional-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 10px;
+    color: var(--color-ddd-color);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.additional-info.expanded {
+    max-height: 500px; /* Adjust based on content */
+    transition: max-height 0.5s ease-in;
+}
+
+/* Update existing styles */
+.experience-chain .project-box {
+    min-height: auto;
+    height: auto;
+    transition: all 0.3s ease;
+}
 /* Work experience section ends here */
 /* ########################################################### */
 

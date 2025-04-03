@@ -2229,3 +2229,43 @@ transition-duration: 1.6s;
   /* responsive code above */
   
   
+  .project-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .github-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .github-btn i {
+    margin-right: 5px;
+  }
+  
+  .learn-more-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .project-full-description {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .github-btn:hover, .learn-more-btn:hover {
+    opacity: 0.8;
+  }
+  

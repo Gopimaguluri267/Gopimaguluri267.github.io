@@ -213,3 +213,12 @@ function toggleDescription(id) {
       description.style.display = "none";
   }
 }
+
+function showDescription(projectId) {
+  const description = document.getElementById(projectId + '-description');
+  if (description.style.display === 'none') {
+    description.style.display = 'block';
+  } else {
+    description.style.display = 'none';
+  }
+}

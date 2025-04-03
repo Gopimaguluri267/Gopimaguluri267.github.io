@@ -2229,43 +2229,90 @@ transition-duration: 1.6s;
   /* responsive code above */
   
   
-  .project-description {
+.project-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.github-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.github-btn i {
+  margin-right: 5px;
+}
+
+.learn-more-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-full-description {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.github-btn:hover, .learn-more-btn:hover {
+  opacity: 0.8;
+}
+
+.project-description {
     font-size: 14px;
-    color: #555;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .project-buttons {
+    display: flex;
+    gap: 10px;
     margin-top: 10px;
   }
   
   .github-btn {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 8px 12px;
     border: none;
     cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
+    border-radius: 4px;
   }
   
   .github-btn i {
-    margin-right: 5px;
+    font-size: 16px;
+  }
+  
+  .github-btn:hover {
+    opacity: 0.8;
   }
   
   .learn-more-btn {
     background-color: #007BFF;
     color: white;
-    padding: 10px;
+    padding: 8px 12px;
     border: none;
     cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
+    border-radius: 4px;
   }
   
   .project-full-description {
-    margin-top: 15px;
+    display: none;
+    margin-top: 10px;
     font-size: 16px;
     color: #333;
-  }
-  
-  .github-btn:hover, .learn-more-btn:hover {
-    opacity: 0.8;
+    border-left: 3px solid #007BFF;
+    padding-left: 10px;
   }
   

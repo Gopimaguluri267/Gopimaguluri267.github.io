@@ -299,7 +299,7 @@ noscript{
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     gap: 60px;
     color: var(--color-white);
 }

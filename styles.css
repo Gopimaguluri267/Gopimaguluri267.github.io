@@ -1470,23 +1470,22 @@ noscript{
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    padding: 0 40px;
+    padding: 40px;
 }
 
 .image-div{
     width: 50%;
     height: 100%;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .image-div img{
-    max-height: 90%;
-    max-width: 90%;
+    height: 100%;
     width: auto;
-    height: auto;
+    max-width: 100%;
     object-fit: contain;
     border-radius: 8px;
 }

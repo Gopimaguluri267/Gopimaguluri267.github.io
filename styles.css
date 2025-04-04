@@ -2352,3 +2352,64 @@ input[type="radio"],
 input[type="checkbox"] {
     cursor: var(--cursor-pointer);
 }
+
+/* Add cursor styles to main sections and their containers */
+.main,
+.landing-page-container,
+.about-section-container,
+.skills-section-container,
+.projects-section-container,
+.education-section-container,
+.achievements-section-container,
+.experience-chain,
+.project-boxes-div,
+.education-chain {
+    cursor: var(--cursor-default);
+}
+
+/* Add cursor styles to section spacing and margins */
+.project-boxes-div > *,
+.experience-chain > *,
+.education-chain > *,
+.skills-section > *,
+.about-section > *,
+.projects-section-div > * {
+    cursor: var(--cursor-default);
+}
+
+/* Ensure the cursor is maintained in gaps between elements */
+.project-boxes-div::before,
+.project-boxes-div::after,
+.experience-chain::before,
+.experience-chain::after,
+.education-chain::before,
+.education-chain::after {
+    content: "";
+    display: block;
+    cursor: var(--cursor-default);
+}
+
+/* Add cursor styles to section gaps */
+.projects-section-container,
+.about-section-container,
+.skills-section-container,
+.education-section-container,
+.achievements-section-container {
+    margin: 150px 0;
+    cursor: var(--cursor-default);
+}
+
+/* Ensure cursor consistency in flex gaps */
+.info-dp-section,
+.languages-section,
+.project-boxes-div {
+    gap: 20px;
+    cursor: var(--cursor-default);
+}
+
+/* Add cursor styles to spacing elements */
+.aboutHeadingP,
+.skillsHeadingP,
+.projectsHeadingP {
+    cursor: var(--cursor-default);
+}

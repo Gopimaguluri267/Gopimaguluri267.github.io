@@ -1510,7 +1510,7 @@ noscript{
     min-width: 140px;
     border: none;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1519,11 +1519,11 @@ noscript{
     transition: all 0.3s ease;
     text-decoration: none;
     color: white;
-    background: #6b8cae;  /* Medium blue-gray for project details */
+    background: #518ec4;  /* Medium blue-gray for project details */
 }
 
 .project-btn i {
-    font-size: 1.4rem;
+    font-size: 1.8rem;  /* Increased icon size */
 }
 
 .project-btn:hover {
@@ -1537,7 +1537,7 @@ noscript{
 }
 
 .project-btn.demo {
-    background: #23d5ab;  /* Turquoise for live demo */
+    background: #5ecc7f;  /* Turquoise for live demo */
 }
 
 .project-full-description {
@@ -1590,7 +1590,11 @@ noscript{
     .project-btn {
         padding: 8px 16px;
         min-width: 120px;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    .project-btn i {
+        font-size: 1.6rem;  /* Slightly smaller icons on mobile */
     }
 }
 /* projects ends */

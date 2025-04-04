@@ -1082,8 +1082,8 @@ noscript{
     width: calc(20% - 16px);
     padding: 30px;
     transform-style: preserve-3d;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 
-                0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 
+                0 3px 3px rgba(0, 0, 0, 0.05);
 }
 
 .language-name::before{

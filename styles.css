@@ -1362,9 +1362,9 @@ noscript{
     font-size: 2.8rem;
     margin-bottom: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
     width: 100%;
 }
 
@@ -1372,22 +1372,22 @@ noscript{
     font-size: 1.6rem;
     color: var(--color-ddd-color);
     font-weight: normal;
-    white-space: nowrap;
-    margin-left: 0;
-    display: inline-block;
+    order: 3;
+    margin-top: 5px;
 }
 
 .education-chain .UniversityInfo {
     font-size: 2rem;
     color: var(--color-white);
     margin: 0;
+    order: 2;
 }
 
 .education-chain .CourseInfo {
     font-size: 1.6rem;
     color: var(--color-ddd-color);
     line-height: 1.6;
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 /* ########################################################### */
 
@@ -1478,14 +1478,14 @@ noscript{
     width: 50%;
     height: auto;
     min-height: 400px;
-    padding: 40px;
+    padding: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .image-div img{
-    max-height: 320px;
+    max-height: 400px;
     width: auto;
     max-width: 100%;
     object-fit: contain;

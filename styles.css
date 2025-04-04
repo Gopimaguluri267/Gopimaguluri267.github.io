@@ -313,12 +313,6 @@ noscript{
     align-items: center;
     justify-content: center;
     position: relative;
-    cursor: var(--cursor-pointer);
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
     /* font-family: fira code; */
     font-family: 'Fira Code', monospace;
     font-size: 1.8rem;
@@ -919,7 +913,6 @@ noscript{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor: pointer;
 }
 .aboutHeadingP{
     width: 300px;
@@ -1026,7 +1019,6 @@ noscript{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor: pointer;
 }
 .skillsHeadingP{
     width: 300px;
@@ -1429,7 +1421,6 @@ noscript{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor: pointer;
 }
 .projectsHeadingP{
     width: 300px;
@@ -1460,12 +1451,6 @@ noscript{
     flex-direction: row;
     justify-content: space-between;
     transition-duration: .3s;
-    cursor: var(--cursor-pointer);
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
     position: relative;
     box-shadow: 0px 10px 20px var(--color-shadowDark);
     margin-bottom: 30px;
@@ -2319,4 +2304,51 @@ transition-duration: 1.6s;
 .education-section-container,
 .achievements-section-container {
     cursor: pointer;
+}
+
+/* Apply pointer cursor to all interactive elements */
+a,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+select,
+.clickable,
+[role="button"],
+.navbar-tabs-ul li,
+.mobile-navbar-tabs-li,
+.logo,
+.letsTalkBtn,
+.project-btn,
+.learn-more-btn,
+.social-media-container a,
+#labelforsetting,
+#labelforvisualmode,
+#labelforsound,
+#backtotopbutton,
+.project-box,
+.language-name,
+.about-heading-article,
+.skills-heading-article,
+.projects-heading-article,
+.frontend-dev-heading,
+.resume-btn {
+    cursor: var(--cursor-pointer) !important;
+}
+
+/* Remove redundant cursor declarations */
+body {
+    cursor: var(--cursor-default);
+}
+
+/* Update specific overrides */
+.project-buttons button,
+.project-buttons a {
+    cursor: var(--cursor-pointer) !important;
+}
+
+/* Ensure form elements have the pointer cursor */
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: var(--cursor-pointer);
 }

@@ -70,7 +70,7 @@ body{
     url('cursor_img.png');
     cursor: url('cursor_img.png'),
     move;
-        cursor: url('cursor_img.png')10 12;
+        cursor: url('click.png')10 12;
 }
 
 
@@ -1476,14 +1476,18 @@ noscript{
 .image-div{
     width: 50%;
     height: 100%;
-    padding-top: 70px;
-    padding-left: 10px;
-    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-div img{
-    height: 80%;
+    max-height: 90%;
+    max-width: 90%;
     width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
 }
 

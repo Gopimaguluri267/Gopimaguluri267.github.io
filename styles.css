@@ -1543,6 +1543,7 @@ noscript{
     font-size: 1.6rem;
     color: var(--color-ddd-color);
     backdrop-filter: blur(4px);
+    width: 95%;
 }
 
 .project-full-description p {

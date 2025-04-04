@@ -1082,8 +1082,8 @@ noscript{
     width: calc(20% - 16px);
     padding: 30px;
     transform-style: preserve-3d;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
-                0 10px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .language-name::before{
@@ -1155,8 +1155,8 @@ noscript{
     padding-left: 50px;
     display: flex; /* Ensure flex display */
     align-items: flex-start; /* Align items to the start */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
-                0 10px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .experience-chain .project-box:last-child {
@@ -1320,8 +1320,8 @@ noscript{
     height: auto;
     display: flex; /* Ensure flex display */
     align-items: flex-start; /* Align items to the start */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
-                0 10px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .education-chain .project-box:last-child {
@@ -1457,8 +1457,8 @@ noscript{
     justify-content: space-between;
     transition-duration: .3s;
     position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
-                0 10px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
 }
 
@@ -1550,8 +1550,8 @@ noscript{
     color: var(--color-ddd-color);
     backdrop-filter: blur(4px);
     width: 95%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
-                0 10px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-full-description p {
@@ -2435,8 +2435,8 @@ input[type="checkbox"] {
 .project-box:hover,
 .language-name:hover,
 .project-full-description:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4), 
-                0 15px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 
+                0 8px 8px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 }

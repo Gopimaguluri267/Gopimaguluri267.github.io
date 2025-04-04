@@ -207,16 +207,10 @@ window.addEventListener('resize', windowResize);
 
 function toggleDescription(id) {
     const description = document.getElementById(id);
-    const allDescriptions = document.querySelectorAll('.project-full-description');
-    
-    // Close any other open descriptions first
-    allDescriptions.forEach(desc => {
-        if (desc.id !== id && desc.classList.contains('expanded')) {
-            desc.classList.remove('expanded');
-        }
-    });
-
-    // Toggle the clicked description
-    description.classList.toggle('expanded');
+    if (description.style.display === "none" || !description.style.display) {
+        description.style.display = "block";
+    } else {
+        description.style.display = "none";
+    }
 }
 

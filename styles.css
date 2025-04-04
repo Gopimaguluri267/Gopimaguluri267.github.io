@@ -98,19 +98,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-     cursor: url('click.png');
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
-        padding: 0px 20px;
-        background-image: url(src/img/svg/settings-svgrepo-com.svg);
-        background-size: 60%;
-        background-repeat: no-repeat;
-        background-position: center;
-        mix-blend-mode: difference;
-        transition-duration: .5s;
+    cursor: url('/click.png'), pointer;
+    padding: 0px 20px;
+    background-image: url(src/img/svg/settings-svgrepo-com.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: difference;
+    transition-duration: .5s;
 }
 
 /* .fas{
@@ -157,12 +152,7 @@ body{
     background-size:50%;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: url('click.png');
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
+    cursor: url('/click.png'), pointer;
     transition-duration: .5s;
 }
 
@@ -206,14 +196,8 @@ body{
     background-size:60%;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
+    cursor: url('/click.png'), pointer;
     transition-duration: .5s;
-    cursor: url('click.png');
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
 }
 .invertsoundlabel{
    filter: invert(1);
@@ -750,16 +734,10 @@ noscript{
     width: 180px;
     height: 40px;
     border-radius: 0px;
-    cursor: pointer;
+    cursor: url('/click.png'), pointer;
     transition: all .3s;
-    cursor: url('click.png');
-    cursor: url('click.png'),
-    url('click.png');
-    cursor: url('click.png'),
-    move;
-        cursor: url('click.png')10 12;
     margin-left: 0;
-  }
+}
   
   .letsTalkBtn-text {
     width: 100%;

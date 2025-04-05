@@ -562,7 +562,7 @@
                         <div class="info-div">
                             <article class="ProjectHeading">Fine Tuning Gemma for Law Stack Exchange</article>
                             <p class="ProjectDescription">
-                                Preprocessed 20,000+ legal forum records with NVIDIA NeMo Curator and fine-tuned the Gemma 2B model using NeMo microservices, improving tagging accuracy by 15% during the ODSC NVIDIA Hackathon. Applied filters for word count, score, PII removal, and repeated n-grams to clean and refine the Law Stack Exchange dataset. Converted the model to .nemo format and fine-tuned it on Brev GPU instances using bf16 precision and a cosine annealing learning rate schedule.
+                                Preprocessed 20,000+ legal forum records with NVIDIA NeMo Curator and fine-tuned the Gemma 2B model using PEFT implementation & NeMo microservices, improving tagging accuracy by 15% during the ODSC NVIDIA Hackathon. Applied filters for word count, score, PII removal, and repeated n-grams to clean and refine the Law Stack Exchange dataset. Converted the model to .nemo format and fine-tuned it on Brev GPU instances using bf16 precision and a cosine annealing learning rate schedule.
                             </p>
                             <div class="project-buttons">
                                 <button class="project-btn" onclick="toggleDescription('gemma-details')">
